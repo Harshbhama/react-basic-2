@@ -2,23 +2,11 @@ import React from "react"
 
 function Joke(prop){
   console.log(prop)
-  if(prop.detail.Question == null)
-  {
-  return (
 
-    <div>
-
-      <h2> PunchLine : {prop.detail.PunchLine} </h2>
-      <hr/>
-    </div>
-
-  )
-  }
-  else{
     return (
 
       <div>
-        <h1> Question : {prop.detail.Question} </h1>
+        <h1 style = {{display: prop.detail.Question==null ? "none" : "block"}}> Question : {prop.detail.Question} </h1>
         <h2> PunchLine : {prop.detail.PunchLine} </h2>
         <hr/>
       </div>
@@ -26,6 +14,5 @@ function Joke(prop){
     )
 
     }
-}
 
 export default Joke
