@@ -7,8 +7,8 @@ function Joke(prop){
     return (
 
       <div>
-        <h1 style = {{display: prop.detail.Question==null ? "none" : "block"}}> Question : {prop.detail.Question} </h1>
-        <h2 style = {{color: !prop.detail.Question && "grey" }}> PunchLine : {prop.detail.PunchLine} </h2>
+        <h1 style = {{display: prop.Question==null ? "none" : "block"}}> Question : {prop.Question} </h1>
+        <h2 style = {{color: !prop.Question && "grey" }}> PunchLine : {prop.PunchLine} </h2>
         <hr/>
       </div>
 
