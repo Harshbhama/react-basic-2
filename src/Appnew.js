@@ -13,7 +13,7 @@ function Appnew(){
   const jokeComponents = jokesData.map(function(joke){
 
       return(
-        <Joke key = {joke.id} Question = {joke.Question} PunchLine = {joke.PunchLine} />
+        <Joke key = {joke.id} prod = {joke} />
       )
 
   })
